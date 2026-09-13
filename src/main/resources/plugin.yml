@@ -1,0 +1,18 @@
+name: GuardianAC
+version: 1.0.0
+main: de.sdopium.guardianac.GuardianAC
+api-version: '1.21'
+author: sd-opium
+description: Modular AntiCheat prototype for Paper
+
+commands:
+  guardian:
+    description: GuardianAC administration
+    usage: /guardian <alerts|debug|reload|checks|violations>
+    permission: guardianac.admin
+
+permissions:
+  guardianac.admin:
+    default: op
+  guardianac.alerts:
+    default: op

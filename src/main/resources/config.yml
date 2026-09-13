@@ -1,0 +1,27 @@
+general:
+  enabled: true
+  max-violations-before-punishment: 12
+  decay-seconds: 20
+
+checks:
+  fly:
+    enabled: true
+    max-air-ticks: 12
+  speed:
+    enabled: true
+    max-horizontal-speed: 0.75
+  nofall:
+    enabled: true
+  movement:
+    enabled: true
+    max-distance-per-tick: 1.25
+  fastbreak:
+    enabled: true
+    min-break-time-ms: 90
+  fastplace:
+    enabled: true
+    min-place-interval-ms: 60
+
+punishments:
+  enabled: false
+  command: "kick %player% GuardianAC violation"
